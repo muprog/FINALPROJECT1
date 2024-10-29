@@ -174,7 +174,7 @@ try {
             {},
             (err,token)=>{
                if(err) throw err; 
-               res.cookie("token",token).json(user)
+               res.cookie("token",token).json(user);
             }
         )
         }
