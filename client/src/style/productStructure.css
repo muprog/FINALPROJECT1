@@ -1,0 +1,157 @@
+/* .product-img-div{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.product-img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.whole-product{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(5,200px);
+    column-gap: 20px;
+    row-gap: 10px;
+    padding-top: 50px;
+    justify-content: center;
+    /* background-color: rgb(255, 255, 255); *
+}
+.product-whole-div{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    background-color: rgba(247, 241, 247, 0.966);
+}
+@media (max-width:600px){
+    .whole-product{
+        grid-template-columns:repeat(2,200px) ;
+    }
+}
+@media (min-width:600px) and (max-width:950px){
+    .whole-product{
+        grid-template-columns:repeat(3,200px) ;
+    }
+}
+@media (min-width:950px) and (max-width:1060px){
+    .whole-product{
+        grid-template-columns:repeat(4,200px) ;
+    }
+}
+@media (min-width:1060px){
+    .whole-product{
+        grid-template-columns:repeat(5,200px);
+    }
+}
+
+
+.Home-whole-div{
+    /* background-color: rgb(237, 211, 237); *
+    padding: 10px;
+}
+ */
+
+
+ /* Main container for all products */
+.whole-product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 20px; /* Unified gap for rows and columns */
+    padding-top: 50px;
+    justify-content: center;
+  }
+  .whole-product a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Product card container */
+  .product-whole-div {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter background with slight transparency */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for product card */
+  .product-whole-div:hover {
+    transform: translateY(-5px); /* Subtle lift */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  /* Product image container */
+  .product-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+  }
+  
+  /* Product image */
+  .product-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* Ensure images fit inside the container */
+    border-radius: 8px;
+  }
+  
+  /* Product details section */
+  .product-details {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .product-details tr {
+    font-size: 14px;
+    color: #333; /* Darker text color for better readability */
+  }
+  
+  .td1 {
+    font-weight: bold;
+    color: #666; /* Slightly lighter for contrast */
+  }
+  
+  /* Responsive Design */
+  
+  /* Small devices */
+  @media (max-width: 600px) {
+    .whole-product {
+      grid-template-columns: repeat(2, 200px);
+    }
+  }
+  
+  /* Medium devices */
+  @media (min-width: 600px) and (max-width: 950px) {
+    .whole-product {
+      grid-template-columns: repeat(3, 200px);
+    }
+  }
+  
+  /* Larger medium devices */
+  @media (min-width: 950px) and (max-width: 1060px) {
+    .whole-product {
+      grid-template-columns: repeat(4, 200px);
+    }
+  }
+  
+  /* Large devices */
+  @media (min-width: 1060px) {
+    .whole-product {
+      grid-template-columns: repeat(5, 200px);
+    }
+  }
+  
+  /* Home page container */
+  .Home-whole-div {
+    padding: 10px;
+    background-color: #f4f4f4; /* Light gray background for contrast */
+  }
+  

@@ -1,0 +1,71 @@
+.developer-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .developer-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .developer-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .developer-card {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  .programer-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .developer-card img {
+width: 80px;
+height: 80px;
+border-radius: 50px;
+  }
+  
+  .developer-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .developer-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .developer-role {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .developer-description {
+    margin: 10px 0;
+    color: #444;
+  }
+  
+  .developer-email {
+    font-size: 0.9rem;
+  }
+  
+  .developer-email a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .developer-email a:hover {
+    text-decoration: underline;
+  }
+  

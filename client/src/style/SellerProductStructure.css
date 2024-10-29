@@ -1,0 +1,130 @@
+
+.custom-delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100px; /* Fixed width */
+}
+
+.custom-delete-button:hover,
+.custom-delete-button:focus {
+    background-color: red;
+    outline: none;
+}
+
+.custom-delete-button:active {
+    background-color: #ac2925;
+    transform: scale(0.98);
+}
+
+.custom-delete-button:disabled {
+    background-color: #e6e6e6;
+    color: #b3b3b3;
+    cursor: not-allowed;
+}
+
+.update {
+    margin-bottom: 5px;
+    background-color: #007bff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100px; /* Fixed width */
+}
+
+.qty {
+    width: 35px;
+}
+
+.id-th {
+    width: 190px;
+}
+
+/* Mobile-First Approach - Default styling for small screens */
+.SellerProducts table {
+    display: block;
+    width: 100%;
+    white-space: normal; /* Ensure text wraps naturally */
+}
+
+.SellerProducts table th, .SellerProducts table td {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.SellerProducts table td::before {
+    content: attr(data-label); /* Add label before cell content */
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.SellerProducts table td {
+    display: block;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Break long words to fit small screens */
+}
+
+.qty, .id-th {
+    width: 100%;
+}
+
+/* Adjustments for Medium Screens (Tablets - 768px and up) */
+@media (min-width: 768px) {
+    .SellerProducts table {
+        display: table; /* Back to table layout */
+        width: 100%;
+    }
+
+    .SellerProducts table th, .SellerProducts table td {
+        display: table-cell;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .qty {
+        width: 40px;
+    }
+
+    .id-th {
+        width: 150px;
+    }
+}
+
+/* Large Screen Adjustments (Desktops - 1024px and up) */
+@media (min-width: 1024px) {
+    .SellerProducts table th, .SellerProducts table td {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .qty {
+        width: 50px;
+    }
+
+    .id-th {
+        width: 200px;
+    }
+}

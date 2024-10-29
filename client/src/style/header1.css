@@ -1,0 +1,93 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #040507; /* Adjust header background color as needed */
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header ul li {
+    cursor: pointer;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .language-selector {
+    margin-right: 20px;
+  }
+  
+  .language-selector button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .language-selector button:hover {
+    text-decoration: underline;
+  }
+  
+  .user-profile {
+    position: relative;
+  }
+  
+  .profile-image-small {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Ensures the image is circular */
+    cursor: pointer;
+    object-fit: cover; /* Ensures the image fits the circular shape */
+    border: none; /* Ensures no border is shown around the image */
+    background: none; /* Ensures no background is visible */
+    display: block; /* Ensures the image does not have any extra space around it */
+  }
+  
+  .profile-menu {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 1000;
+  }
+  
+  .profile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profile-menu ul li {
+    padding: 8px 0;
+    cursor: pointer;
+  }
+  
+  .profile-menu ul li:hover {
+    background-color: #f0f0f0;
+  }
+  @media (max-width:600px){
+    .header1{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 300px 150px;
+    }
+  }
+  

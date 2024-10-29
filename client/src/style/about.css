@@ -1,0 +1,45 @@
+.about-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f5f5f5, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .about-container p {
+    color: #333;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  .about-container p::first-line {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  
+  .about-container p::before {
+    content: "🌟";
+    font-size: 1.5rem;
+    margin-right: 5px;
+  }
+  
+  .about-container p::after {
+    content: "✨";
+    font-size: 1.5rem;
+    margin-left: 5px;
+  }
+  
+  .about-container:hover {
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    transform: scale(1.02);
+    transition: background 0.5s ease, transform 0.3s ease;
+  }
+  
+  .about-container:hover p {
+    color: #555;
+  }
+  

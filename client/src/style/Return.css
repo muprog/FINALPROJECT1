@@ -1,0 +1,57 @@
+/* Return.css */
+
+.return-policy {
+    padding: 20px;
+    font-family: "Times New Roman", serif;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #a08282d8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .return-policy h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .return-policy p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    transition: color 0.3s, transform 0.3s;
+    text-align: justify; /* Ensures text is justified for a cleaner look */
+  }
+  
+  .return-policy p strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  .return-policy p i{
+    color: red;
+    font-weight: bold;
+  }
+  .return-policy p i:hover{
+    color: purple;
+    font-weight: bold;
+  }
+  
+  
+  .return-policy p strong:hover {
+    color: #007bff;
+  }
+  
+  .return-policy p br {
+    display: none; /* Hide line breaks to maintain margin consistency */
+  }
+  
+  .return-policy p span {
+    display: block; /* Use span elements for line breaks */
+    margin-bottom: 10px; /* Adds spacing between lines */
+  }

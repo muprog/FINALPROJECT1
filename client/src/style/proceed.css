@@ -1,0 +1,163 @@
+.input{
+    border:none;
+    border-bottom: 2px black solid;
+    padding-left: 10px;
+}
+.pay{
+    margin-top: 10px;
+    background-color: purple;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px purple solid;
+    font-weight: bold;
+}
+.input:focus{
+    outline: none;
+}
+.pay:hover{
+    border-radius: 20px;
+    transition: border-radius .15s;
+}
+.receipt-td{
+    font-size: 15px;
+    font-weight: 500;
+}
+.receipt-username{
+    color: purple;
+}
+.total-price{
+    /* color: white; */
+    /* background-color: rgba(118, 142, 185, 0.902); */
+    /* border-bottom: 3px purple solid; */
+    color: purple;
+    padding: 5px;
+}
+.receipt-whole-div{
+    padding: 20px;
+}
+
+.receipt-whole-div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .receipt-whole-div strong {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .receipt-username {
+    font-size: 1rem;
+    color: #007bff;
+  }
+  
+  .receipt-whole-div table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .receipt-whole-div th {
+    text-align: left;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border: 1px solid #ddd;
+  }
+  
+  .receipt-whole-div tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .receipt-td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .total-price {
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.1rem;
+  }
+  
+  .pay {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .receipt-btn {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between buttons */
+    gap: 1rem; /* Add a gap between buttons */
+    margin-top: 1rem; /* Add margin at the top if needed */
+  }
+  
+  .receipt-btn button {
+    padding: 0.5rem 1rem; /* Adjust padding for button size */
+  }
+  
+  
+  .pay:hover {
+    background-color: purple;
+    transition: background-color 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .receipt-whole-div {
+      padding: 15px;
+    }
+  
+    .pay {
+      font-size: 0.9rem;
+      padding: 8px;
+      margin-left: 20px;
+    }
+  }
+
+
+  @media print {
+    /* Hide everything by default */
+    body * {
+      visibility: hidden;
+    }
+  
+    /* Show only the receipt content */
+    #print-receipt, #print-receipt * {
+      visibility: visible;
+    }
+  
+    /* Hide buttons completely */
+    #print-receipt .receipt-btn,
+    #print-receipt .receipt-btn * {
+      display: none;
+    }
+  
+    /* Adjust the position to ensure it's properly placed */
+    #print-receipt {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  
+    /* Optionally, remove margins if needed */
+    @page {
+      margin: 0;
+    }
+  }
+  

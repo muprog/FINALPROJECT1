@@ -1,0 +1,80 @@
+/* Terms.css */
+
+.terms-container {
+    padding: 20px;
+    font-family: "Times New Roman", serif;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #a08282d8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .terms-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .terms-container h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .terms-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 0; /* No additional padding */
+    text-align: justify; /* Justify text for a clean look */
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .terms-container p:hover {
+    color: purple;
+    transform: scale(1.02);
+  }
+  
+  .terms-container i {
+    color: #007bff;
+    font-style: italic;
+  }
+  
+  .terms-container strong {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .terms-container strong:hover {
+    color: #007bff;
+  }
+  
+  .terms-container ul {
+    padding-left: 20px; /* Indent list items */
+  }
+  
+  .terms-container li {
+    margin-bottom: 10px;
+    padding-left: 5px; /* Add space before list item text */
+  }
+  
+  .terms-container li::marker {
+    color: #007bff; /* Change bullet color for list items */
+  }
+  
+  .terms-container a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  .terms-container a:hover {
+    color: rgb(196, 26, 26);
+    text-decoration: underline;
+  }

@@ -1,0 +1,68 @@
+/* Container for the entire SellerProducts component */
+.SellerProducts {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the Back link */
+  .SellerProducts a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  
+  .SellerProducts a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the table */
+  .SellerProducts table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .SellerProducts th, .SellerProducts td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Header row */
+  .SellerProducts th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  /* Table rows */
+  .SellerProducts tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Image column */
+  .SellerProducts td img {
+    max-width: 50px;
+    height: auto;
+  }
+  
+  /* Action column (e.g., buttons or links) */
+  .SellerProducts td .action {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .SellerProducts td .action button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .SellerProducts td .action button:hover {
+    background-color: #0056b3;
+  }
+  

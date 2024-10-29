@@ -1,0 +1,11 @@
+.view-product-info-img-div{
+    /* width: 100%; */
+    height: 200px;
+}
+.view-product-info-img{
+    height: 100%;
+object-fit: contain;
+}
+.view-product-info-structure-whole-div{
+    padding: 20px;
+}

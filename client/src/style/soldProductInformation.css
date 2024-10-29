@@ -1,0 +1,154 @@
+/* table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+td, th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.product-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.product-table th, .product-table td {
+  padding: 8px;
+}
+
+.total-price {
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  td, th {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .product-table th, .product-table td {
+    padding: 6px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  td, th {
+    font-size: 16px;
+  }
+
+  .product-table th, .product-table td {
+    padding: 10px;
+  }
+} */
+
+/* General table styling *//* General table styling */
+
+
+/* General table styling */
+
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Ensures table cells have fixed widths */
+}
+
+/* Styling for table headers and cells */
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border: none;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px; /* Default font size */
+    overflow: hidden; /* Prevent text overflow */
+}
+
+/* Table headers */
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Table row hover effect */
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Nested table styling */
+table table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+table table th, table table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px; /* Font size for nested tables */
+}
+
+/* Responsive styling for medium screens */
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 14px; /* Adjust font size */
+        padding: 10px; /* Adjust padding */
+    }
+
+    table table th, table table td {
+        font-size: 12px; /* Adjust font size for nested tables */
+    }
+}
+
+
+.sold-product{
+  width: 235px;
+}
+.product{
+width: 120px;
+}
+.quantity{
+  width: 50px;
+}
+
+.download-btn {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px 20px; /* Add some padding */
+  font-size: 16px; /* Increase font size */
+  font-weight: bold;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-bottom: 20px; /* Add space below the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.download-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.download-btn:focus {
+  outline: none; /* Remove outline when focused */
+}
+
+.download-btn:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+}

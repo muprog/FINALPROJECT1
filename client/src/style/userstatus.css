@@ -1,0 +1,98 @@
+.user-status-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .user-status-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-status-header {
+    background-color: #97a7b8;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .user-status-th, .user-status-td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+  }
+  
+  .user-status-th {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+  }
+  
+  .user-status-td {
+    color: #333;
+  }
+  
+  .user-status-row {
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-status-row:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Conditional styling for status */
+  .status-on {
+    color: green;
+  }
+  
+  .status-off {
+    color: red;
+  }
+  
+  .status-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .status-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .status-button:active {
+    transform: scale(0.95);
+  }
+  
+  @media (max-width: 768px) {
+    .user-status-table {
+      font-size: 16px;
+    }
+  
+    .user-status-th {
+      font-size: 18px;
+    }
+  
+    .status-button {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  }
+  .user-status-tm:hover {
+    color: #007bff;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }  
+  .user-status-tm{
+font-family: 'Times New Roman', Times, serif;
+  }

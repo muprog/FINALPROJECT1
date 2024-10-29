@@ -1,0 +1,172 @@
+/* .buyerProductStructure{
+    width: 350px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 80px;
+    margin-bottom: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   align-items: start;
+   background-color: rgba(247, 241, 247, 0.966);
+}
+.add-to-cart{
+    padding: 3px 6px;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    border-color: purple;
+    border-style: solid;
+    cursor: pointer;
+}
+.buyerProductStructure-img-div{
+    width: 150px;
+    padding:21px;
+    border-radius: 100px;
+    background-color: white;
+}
+.image-container{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.buyerProductStructure-img-inner-div{
+    width: 100px;
+    height: 100px;
+}
+.buyerProductStructure-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    
+}
+.buyerProductStructure-lower-div span{
+font-weight: bold;
+}
+.buyerProductStructure-lower-div-except-desc{
+    line-height: 15px;
+}
+.buyerProductStructure-lower-div-except-desc td{
+    padding-left: 10px;
+
+}
+.td1{
+    font-size: 13px;
+}
+.description{
+    font-size: 12px;
+}
+.buyerProductStructure-btn-div{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+}
+.buyerProductStructure-btn-div button:hover{
+border-radius: 20px;
+transition: border-radius 0.15s;
+}
+@media (max-width:500px){
+    .buyerProductStructure{
+        column-gap: 10px;
+    } 
+} */
+
+.buyerProductStructure {
+    width: 350px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced out */
+    height: 100%; /* Ensures the whole component takes up the same space */
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(247, 241, 247, 0.966);
+}
+
+.add-to-cart {
+    padding: 8px 12px;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    /* width: 100%; Makes the button full-width */
+}
+
+.buyerProductStructure-img-div {
+    width: 150px;
+    padding: 21px;
+    border-radius: 100px;
+    background-color: white;
+    margin: 0 auto; /* Centers the image */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.buyerProductStructure-img-inner-div {
+    width: 100px;
+    height: 100px;
+}
+
+.buyerProductStructure-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.buyerProductStructure-lower-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures the button stays at the bottom */
+    height: 100%;
+}
+
+.buyerProductStructure-lower-div-except-desc {
+    line-height: 15px;
+    /* line-height: 1.5em; */
+}
+
+.buyerProductStructure-lower-div-except-desc td {
+    padding-left: 10px;
+}
+
+.td1 {
+    font-size: 13px;
+}
+
+.description {
+    font-size: 12px;
+    margin-top: auto; /* Pushes the description to the bottom */
+}
+
+.buyerProductStructure-btn-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.buyerProductStructure-btn-div button {
+    width: 100%;
+}
+
+.buyerProductStructure-btn-div button:hover {
+    border-radius: 20px;
+    transition: border-radius 0.15s;
+}
+
+@media (max-width: 500px) {
+    .buyerProductStructure {
+        width: 100%; /* Make responsive for smaller screens */
+    }
+
+    .buyerProductStructure-btn-div {
+        width: 100%;
+    }
+}

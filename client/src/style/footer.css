@@ -1,0 +1,134 @@
+/* .Footer{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(28, 37, 82);
+    height: 130px;
+    position: sticky;
+    bottom: 0px;
+    right: 0px;
+    left:0px;
+    margin-top: 20px;
+    }
+   .Footer a,.contacts,.copy-right{
+        text-decoration: none;
+        color: white;
+        font-size: small;
+        gap: 3px;
+    }
+    .contacts-container{
+        width: 40px;
+        height: 25px;
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .Footer a:hover{
+text-decoration: underline;
+    } */
+
+
+    /* footer.css */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f1c40f;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .footer-section h4:hover {
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .footer-section p, .footer-section a {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.6;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .footer-section p:hover, .footer-section a:hover {
+    color: #f1c40f;
+    transform: scale(1.02);
+  }
+  
+  .footer-section a {
+    color: #f1c40f;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section .social-media {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-section .social-media a {
+    font-size: 16px;
+    color: #ddd;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .footer-section .social-media a:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+  }

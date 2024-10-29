@@ -1,0 +1,56 @@
+.feedback-container {
+    padding: 20px;
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-header {
+    background-color: #537396;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .feedback-th, .feedback-td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .feedback-th {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+  }
+  
+  .feedback-row {
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-row:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .feedback-td {
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  @media (max-width: 768px) {
+    .feedback-table {
+      font-size: 14px;
+    }
+  
+    .feedback-th {
+      font-size: 16px;
+    }
+  }
+  

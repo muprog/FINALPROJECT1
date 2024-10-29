@@ -1,0 +1,66 @@
+.outer{
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    margin-left: 10px;
+    column-gap: 10px;
+}
+
+.cart-img-div{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(247, 241, 247, 0.966);
+    justify-content: center;
+}
+
+.cart-img-div div{
+    padding: 15px;
+    border-radius: 70px;
+    background-color: white;
+}
+
+
+.cart-img{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  
+}
+.remove-btn{
+background-color: purple;
+color: white;
+padding: 5px 10px;
+font-weight: bold;
+cursor: pointer;
+border-color: purple;
+border-style: solid;
+border-radius: 1px;
+}
+
+.cart{
+    padding: 20px;
+}
+.cart-div-except-img{
+    background-color: rgba(247, 241, 247, 0.966);
+}
+
+.plus,.minus{
+    /* color: white; */
+    /* font-weight: bold; */
+    /* background-color: black; */
+    border:.5px rgb(122, 55, 122,.2) solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px 0px rgb(118, 2, 118,.2);
+}
+.plus:hover,.minus:hover{
+    box-shadow: 0px 0px 7px 0px rgb(118, 2, 118,.2); 
+    transition: box-shadow 0.15s;
+}
+.plus:active,.minus:active{
+    box-shadow: 0px 0px 10px 0px rgb(118, 2, 118,.5); 
+}

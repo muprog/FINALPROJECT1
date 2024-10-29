@@ -1,0 +1,232 @@
+
+/* Base styles for the whole-login div */
+.whole-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    
+  }
+  
+  .register-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* width: 100%; */
+    max-width: 600px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+  }
+  
+  /* Styling for the login section */
+  .login {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Styling for labels and input fields */
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-input {
+
+    width: 100%; /* Ensure input takes full width within its flex container */
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    outline: none;
+  }
+  
+  /* Styling for the select element */
+  span select {
+    margin-left: 10px;
+    width: 60px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  span select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    outline: none;
+  }
+  
+  /* Styling for the button */
+  .loginbtn {
+    background-color:purple;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 160px;
+    text-decoration: none;
+  }
+  
+  .loginbtn:hover {
+    background-color: green;
+    transform: scale(1.02);
+  }
+  
+  .loginbtn:active {
+    background-color: #004494;
+  }
+  
+  /* Styling for the login link */
+  .signinbtn {
+    color: purple;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 7px;
+  }
+  
+  .signinbtn:hover {
+
+    transform: scale(1.02);
+    text-decoration: underline;
+  }
+
+  /* Additional styling for the div containing the login link */
+  div p {
+    margin-top: 1rem;
+   color: red;
+  }
+  .create-account{
+    margin-left: 20px;
+    color: purple;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+  }
+  .create-account:hover{
+    transform: scale(1.02);
+    text-decoration: underline;
+  }
+  .forgot-password{
+    color: purple;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .forgot-password:hover{
+
+    transform: scale(1.02);
+    text-decoration: underline;
+  }
+  .send{
+    background-color: purple;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+  }
+.send:hover{
+    background-color: purple;
+    transform: scale(1.02); 
+    text-decoration: underline;
+}
+  .forget-creat{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .form-row {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 16px; /* Gap between the two input fields */
+  }
+
+  .form-row .form-input {
+    flex: 1; /* Each input field takes equal space */
+    margin: 0; /* Removes any additional margin that could affect alignment */
+  }
+  .form-label option{
+    margin-top: 10px;
+  }
+  .terms {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .terms a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
+
+
+  /* Style for the submit button before OTP is sent */
+  .submit {
+    background-color: purple;
+    color: white;
+  }
+  
+  .submit:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+  }
+  
+  /* Style for the button when OTP is sent */
+  .otp-submit {
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .otp-submit:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+  }
+ 
+  
+  .otp-submit:not(:disabled):hover {
+    background-color: purple; /* Darker green for OTP submit */
+  }
+  

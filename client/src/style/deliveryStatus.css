@@ -1,0 +1,254 @@
+/* .sold-product-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sold-product-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.sold-product-container thead th {
+    background-color: #f4f4f4;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.sold-product-container tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Nested table styling for Sold Products 
+.sold-product-container .sold-product table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sold-product-container .sold-product th, .sold-product td {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.product {
+    width: 82%;
+}
+
+.quantity {
+    width: 18%;
+}
+
+/* Button styling 
+button.pay {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.pay:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styling 
+@media (max-width: 768px) {
+    
+    .sold-product-container  th, td {
+        display: block;
+        width: 100%;
+    }
+    .sold-product-container table{
+   width: 300px;
+    }
+    .sold-product-container  thead {
+        display: none;
+    }
+
+    .sold-product-container tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 14px;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    }
+
+    .sold-product-container  tbody td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        padding-right: 10px;
+        color: #333;
+    }
+
+    .sold-product  .sold-product th, .sold-product td {
+        display: block;
+        width: 250px;
+    }
+    .sold-product table{
+        width: 300px;
+    }
+
+    button.pay {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra Small Screens 
+@media (max-width: 480px) {
+    .sold-product-container {
+        padding: 10px;
+    }
+
+    .sold-product-container tbody td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button.pay {
+        font-size: 12px;
+        padding: 6px;
+    }
+} */
+
+
+.sold-product-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: auto; /* Allow horizontal scrolling for overflow content */
+}
+
+.sold-product-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.sold-product-container thead th {
+    background-color: #f4f4f4;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.sold-product-container tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Nested table styling for Sold Products */
+.sold-product-container .sold-product table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sold-product-container .sold-product th, .sold-product-container .sold-product td {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.product {
+    width: 82%;
+    /* Removed text-overflow for product column to ensure all text is visible */
+}
+
+.quantity {
+    width: 18%;
+}
+
+/* Button styling */
+button.pay {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+button.pay:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .sold-product-container table {
+        display: block;
+        overflow-x: auto; /* Allow horizontal scrolling */
+    }
+
+    .sold-product-container thead {
+        display: none; /* Hide table headers */
+    }
+
+    .sold-product-container tbody td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 14px;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    }
+
+    .sold-product-container tbody td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        padding-right: 10px;
+        color: #333;
+        white-space: nowrap; /* Prevent labels from wrapping */
+    }
+
+    .sold-product-container .sold-product th, .sold-product-container .sold-product td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sold-product-container .sold-product table {
+        width: 100%;
+    }
+
+    button.pay {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .sold-product-container {
+        padding: 10px;
+    }
+
+    .sold-product-container tbody td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button.pay {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
