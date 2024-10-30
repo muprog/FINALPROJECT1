@@ -2,7 +2,6 @@ const express=require('express');
 const router=express.Router();
 const cookieParser=require('cookie-parser');
 const multer=require('multer');
-const path=require('path');
 const storage=multer.diskStorage({
     destination:function(req,file,cb){
                     cb(null,"../../FINALPROJECT/client/src/images/");
@@ -32,8 +31,6 @@ router.use(cors({
     credentials:true
 }
 ))
-
-router.use('/images', express.static(path.join(__dirname, '../../FINALPROJECT/client/src/images')));
 
 router.use(cookieParser());
 router.get('/',displayProducts);
@@ -73,7 +70,5 @@ router.get('/favorites/:userEmail', getFavorite);
 router.get('/favorites/:userEmail', getFavorite);
 router.post('/remove-favorite',removeFavorite)
 router.delete('/favorites/:email/:productId',DeleteFavorite);
-router.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../../FINALPROJECT/client/build', 'index.html'));
-})
+
 module.exports=router;
