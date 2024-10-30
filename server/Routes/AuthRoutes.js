@@ -32,6 +32,9 @@ router.use(cors({
     credentials:true
 }
 ))
+
+router.use('/images', express.static(path.join(__dirname, '../../FINALPROJECT/client/src/images')));
+
 router.use(cookieParser());
 router.get('/',displayProducts);
 router.post('/register',registerUser);
@@ -71,6 +74,6 @@ router.get('/favorites/:userEmail', getFavorite);
 router.post('/remove-favorite',removeFavorite)
 router.delete('/favorites/:email/:productId',DeleteFavorite);
 router.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../../client/build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '../../FINALPROJECT/client/build', 'index.html'));
 })
 module.exports=router;
