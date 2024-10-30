@@ -11,3 +11,4 @@ app.use(cookieParser())
 app.use(express.json());
 app.use('/',require('./Routes/AuthRoutes'))
 app.listen(process.env.PORT,()=>console.log('The server is running on ',process.env.PORT));
+
