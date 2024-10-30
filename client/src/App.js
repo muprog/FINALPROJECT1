@@ -47,7 +47,7 @@ import UpdateProductType from './Component/UpdateProductType';
 import Favorite from './Component/Favorite';
 //import BannerPage from './pages/BannerPage';
 // axios.defaults.baseURL="http://localhost:8000";
-axios.defaults.baseURL="https://finalproject-backend-5jif.onrender.com";
+axios.defaults.baseURL="https://finalproject-backend-9lvt.onrender.com";
 axios.defaults.withCredentials=true;
 function App() {
   //ADMIN
