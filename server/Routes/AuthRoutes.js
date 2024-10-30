@@ -2,7 +2,7 @@ const express=require('express');
 const router=express.Router();
 const cookieParser=require('cookie-parser');
 const multer=require('multer');
-
+const path=require('path');
 const storage=multer.diskStorage({
     destination:function(req,file,cb){
                     cb(null,"../../FINALPROJECT/client/src/images/");
