@@ -27,7 +27,8 @@ const cors=require('cors');
 
 router.use(cors({
     // origin:'http://localhost:3000',
-    origin:'https://finalproject1-frontend.onrender.com',
+    // origin:'https://finalproject1-frontend.onrender.com',
+    origin:'https://finalproject-1.vercel.app',
     credentials:true
 }
 ))
